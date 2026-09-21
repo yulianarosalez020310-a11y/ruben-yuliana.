@@ -110,6 +110,13 @@
     text-shadow:0 3px 16px rgba(0,0,0,.16);
     white-space:nowrap;
   }
+  .names .name-line,
+  .names .amp{
+    display:inline-block;
+  }
+  .names .amp{
+    margin:0 .10em;
+  }
   .hero-verse{
     max-width:470px;
     margin:24px auto 14px;
@@ -456,10 +463,20 @@ section{
       text-align:center;
     }
     .names{
-      font-size:clamp(4.3rem, 15vw, 5.6rem);
+      font-size:clamp(4.6rem, 16vw, 5.95rem);
       white-space:normal;
       text-align:center;
-      line-height:1.02;
+      line-height:0.98;
+    }
+    .names .name-line,
+    .names .amp{
+      display:block;
+      text-align:center;
+    }
+    .names .amp{
+      margin:-.05em 0 -.03em;
+      font-size:.82em;
+      line-height:.82;
     }
     .hero-verse{
       font-size:1.02rem;
@@ -497,7 +514,7 @@ section{
     <div class="hero-inner">
       <div class="hero-copy">
         <div class="eyebrow">NUESTRA BODA</div>
-        <h1 class="names">Ruben &amp; Yuliana</h1>
+        <h1 class="names"><span class="name-line">Ruben</span><span class="amp">&amp;</span><span class="name-line">Yuliana</span></h1>
         <p class="hero-verse">“Encontré al que ama mi alma.”</p>
         <div class="verse-ref">CANTARES 3:4</div>
 
